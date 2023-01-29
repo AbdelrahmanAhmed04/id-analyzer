@@ -10,14 +10,14 @@ function idAnalyser(props) {
     (props.id.substr(7, 2) > "35" && props.id.substr(7, 2) < "88") ||
     props.id.substr(7, 2) > "88" ||
     props.id.substr(3, 2) > "12" ||
-    props.id.substr(3, 2) < "1" ||
+    props.id.substr(3, 2) < "01" ||
     props.id.substr(5, 2) > "31" ||
-    props.id.substr(5, 2) < "1"
+    props.id.substr(5, 2) < "01"
   ) {
     document.getElementById("id").value = "";
     return window.alert("please enter correct id");
   }
-
+  //test comment
   var birthYear = props.id[0] === "3" ? "20" : "19";
   var birthDate =
     birthYear +
